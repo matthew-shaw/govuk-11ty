@@ -1,20 +1,34 @@
 {
   "name": "govuk-11ty",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "GOV.UK Eleventy",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "format": "prettier . --write",
+    "upgrade": "ncu -u"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-shaw/govuk-11ty.git"
+  },
+  "author": {
+    "name": "Matt Shaw",
+    "url": "https://matthew-shaw.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthew-shaw/govuk-11ty/issues"
+  },
+  "homepage": "https://github.com/matthew-shaw/govuk-11ty#readme",
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",
     "@x-govuk/govuk-eleventy-plugin": "^7.0.1"
   },
   "devDependencies": {
+    "npm-check-updates": "^18.0.1",
     "prettier": "^3.5.3"
   }
 }
