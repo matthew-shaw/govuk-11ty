@@ -1,0 +1,20 @@
+{
+  "name": "govuk-11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.1",
+    "@x-govuk/govuk-eleventy-plugin": "^7.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
