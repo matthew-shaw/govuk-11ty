@@ -43,5 +43,6 @@ export default function (eleventyConfig) {
       // The folder where all your content will live:
       input: "docs",
     },
+    pathPrefix: "/govuk-11ty/",
   };
 }
