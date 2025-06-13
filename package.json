@@ -4,8 +4,8 @@
   "description": "GOV.UK Eleventy",
   "private": true,
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet",
     "format": "prettier . --write",
     "upgrade": "ncu -u"
   },
