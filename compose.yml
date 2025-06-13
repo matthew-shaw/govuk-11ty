@@ -1,0 +1,15 @@
+services:
+  govuk-11ty:
+    build: .
+    ports:
+      - "8080:8080"
+    develop:
+      watch:
+        - action: rebuild
+          path: package.json
+        - action: sync
+          path: eleventy.config.js
+          target: /app/eleventy.config.js
+        - action: sync
+          path: docs
+          target: /app/docs
