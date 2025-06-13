@@ -5,7 +5,15 @@
 - Docker, or...
 - Node
 
-## Getting started
+## Quickstart
+
+```shell
+docker run --rm -it -p 8000:8000 ghcr.io/matthew-shaw/govuk-11ty:main
+```
+
+Open: <http://localhost:8080>
+
+## Developing
 
 ```shell
 git clone https://github.com/matthew-shaw/govuk-11ty.git
