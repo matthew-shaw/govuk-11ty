@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - latest
 
 # Set permissions of GITHUB_TOKEN
 permissions:

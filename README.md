@@ -7,13 +7,15 @@
 
 ## Quickstart
 
-```shell
-docker run --rm -it -p 8000:8000 ghcr.io/matthew-shaw/govuk-11ty:main
-```
+1.  ```shell
+    docker run --rm -it -p 8080:8080 ghcr.io/matthew-shaw/govuk-11ty:<TAG>
+    ```
 
-Open: <http://localhost:8080/govuk-11ty/>
+    Where `<TAG>` is a [release version](https://github.com/matthew-shaw/govuk-11ty/releases), or `latest`
 
-## Developing
+2.  Open: <http://localhost:8080/govuk-11ty/>
+
+## Develop
 
 ```shell
 git clone https://github.com/matthew-shaw/govuk-11ty.git
@@ -32,4 +34,22 @@ docker compose watch
 nvm install
 npm install
 npm start
+```
+
+## Format
+
+Use [Prettier](https://prettier.io/), an opinionated code formatter, for consistency.
+
+To reformat files:
+
+```shell
+npm run format
+```
+
+## Upgrade
+
+Use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) to upgrade Node package dependencies:
+
+```shell
+npm run upgrade
 ```
